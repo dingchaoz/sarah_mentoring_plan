@@ -1,1 +1,2 @@
-[recommendation dataset] (https://www.kdnuggets.com/2016/02/nine-datasets-investigating-recommender-systems.html)
+- [recommendation dataset](https://www.kdnuggets.com/2016/02/nine-datasets-investigating-recommender-systems.html)
+- [recommendation system overview Chapter 9](http://infolab.stanford.edu/~ullman/mmds/ch9.pdf)
