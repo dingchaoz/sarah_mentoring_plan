@@ -18,3 +18,23 @@ have very few ratings since those ratings are highly sensitive to individual per
 
 
 Additional dataset:[recommendation dataset](https://www.kdnuggets.com/2016/02/nine-datasets-investigating-recommender-systems.html)
+
+
+- Pyspark installation
+1. Create a virtual environment ```python -m venv .venv/spark; source .venv/spark/bin/activate```
+2. Install Java8 which is required to run Spark using brew: ```brew cask install homebrew/cask-versions/adoptopenjdk```
+3. Install Spark using brew```brew install apache-spark```
+4. Test to see if pyspark is installed by type ``pyspark``` in terminal
+5. Add pyspark to jupyter notebook
+5.1 find the global profile for terminal, mostly it is ~/.bash_profile
+5.2 ```vim ~/.bash_profile```
+5.3 Press I to insert and paste the following codes in bash profile:
+```export SPARK_PATH=~/spark-1.6.0-bin-hadoop2.6 
+export PYSPARK_DRIVER_PYTHON="jupyter" 
+export PYSPARK_DRIVER_PYTHON_OPTS="notebook" 
+#For python 3, You have to add the line below or you will get an error
+# export PYSPARK_PYTHON=python3
+alias snotebook='$SPARK_PATH/bin/pyspark --master local[2]'```
+5.4 Exit vim: press ESC, and then enter :wq
+5.5 run ```source ~/.bash_profile``` to activate the setting
+5.6 type pypark in terminal and it shall opens jupyter nobteook
