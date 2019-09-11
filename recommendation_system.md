@@ -20,7 +20,7 @@ have very few ratings since those ratings are highly sensitive to individual per
 Additional dataset:[recommendation dataset](https://www.kdnuggets.com/2016/02/nine-datasets-investigating-recommender-systems.html)
 
 
-- Pyspark installation
+- Pyspark installation, credits to [it](https://blog.sicara.com/get-started-pyspark-jupyter-guide-tutorial-ae2fe84f594f)
 1. Create a virtual environment ```python -m venv .venv/spark; source .venv/spark/bin/activate```
 2. Install Java8 which is required to run Spark using brew: ```brew cask install homebrew/cask-versions/adoptopenjdk```
 3. Install Spark using brew```brew install apache-spark```
@@ -36,6 +36,6 @@ export PYSPARK_DRIVER_PYTHON_OPTS="notebook"
 # export PYSPARK_PYTHON=python3
 alias snotebook='$SPARK_PATH/bin/pyspark --master local[2]'
 ```
-5.4 Exit vim: press ESC, and then enter :wq
+5.4 Exit vim: press ESC, and then enter :wq 
 5.5 run ```source ~/.bash_profile``` to activate the setting
 5.6 type pypark in terminal and it shall opens jupyter nobteook
