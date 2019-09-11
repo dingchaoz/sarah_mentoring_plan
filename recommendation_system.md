@@ -34,7 +34,8 @@ export PYSPARK_DRIVER_PYTHON="jupyter"
 export PYSPARK_DRIVER_PYTHON_OPTS="notebook" 
 #For python 3, You have to add the line below or you will get an error
 # export PYSPARK_PYTHON=python3
-alias snotebook='$SPARK_PATH/bin/pyspark --master local[2]'```
+alias snotebook='$SPARK_PATH/bin/pyspark --master local[2]'
+```
 5.4 Exit vim: press ESC, and then enter :wq
 5.5 run ```source ~/.bash_profile``` to activate the setting
 5.6 type pypark in terminal and it shall opens jupyter nobteook
